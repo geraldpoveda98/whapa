@@ -158,6 +158,20 @@ Edit only the values of the./cfg/settings.cfg file
 * If you want to use 2FA (Two Factor Authentication), you will have to go to the URL: https://myaccount.google.com/apppasswords Then select Application: Other. Write down: Whapa, and a password will be display, then you must write the password in your settings.cfg.
 (Thanks to YuriCosta) or Login by OAuth.
 
+====================================================================================================================================================================================================
+
+ERROR_GENERATED
+=====
+VERSION DE PYTHON 3.11.1
+	1.raise SSLError(e, request=request)requests.exceptions.SSLError: HTTPSConnectionPool(host='android.clients.google.com', port=443): Max retries exceeded with url: /auth (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:992)')))
+
+VERSION DE PYTHON 3.9.1
+	2.raise SSLError(e, request=request)
+	requests.exceptions.SSLError: HTTPSConnectionPool(host='android.clients.google.com', port=443): Max retries exceeded with url: /auth (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1123)')))
+ 
+====================================================================================================================================================================================================
+
+
 WHACLOUD
 =====
 whacloud.py is a tool which allows WhatsApp users on Iphone to extract their backed up WhatsApp data from ICloud.
